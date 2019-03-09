@@ -1,0 +1,69 @@
+Train Scheduller Pseudocode:
+
+1.	Create global variables for train name, destination, first train time, current time, next arrival, minutes away, and frequency.
+
+2.	Establish connection with firebase.
+
+3	Load all train schedule rows from firebase.
+
+4.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
+
+5.	When user clicks Submit.
+
+		a.	set train name to train name text box value.
+
+		b.	set destinanation to destination text box value.
+
+		c.	set first train time to first train time text box value.
+
+		d.	set frequency to frequency text box value.
+
+	if train name, destination, first train time, or frequency is/are blank
+
+		alert user that the he/she must enter values into text boxes for them to appear in scheduler.
+
+	else if first train time is not military time value
+
+		alert user that he/she must enter military time into first train time.
+
+	else if frequency is not a positive integer
+
+		alert user that he/she must enter positive integer for frequency
+
+	else
+
+		I.	set current time to current military time
+
+		II.	if current time < first train time
+
+				minutes away = first train time - current time (in minutes)
+
+				next arrival time = first train time
+
+			else if current time = first train time
+
+				minutes away = 0
+
+				next arrival time = first train time
+
+			else    
+
+				add frequency to first arrival time while the sum < current time
+
+				When the sum > current time, find the difference in minutes and set it to minutes away
+
+				next arrival time = sum
+
+		III.	Store train name, destination, frequency, next arrival, and minutes away in firebase.
+
+		IV.	Delete all dynamic rows from html file for train schedule.
+
+		V.	Load all train schedule rows from firebase
+
+		VI.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
+
+	clear all the text boxes
+
+
+
+		
