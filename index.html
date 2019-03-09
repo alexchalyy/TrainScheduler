@@ -6,6 +6,7 @@
         Written by Alex Chalyy on 3/8/2019. -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,101 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <!--    This is the header. -->
+    <div class="container" id="c1">
+        <div class="card" id="c">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-5" id="title">
+                        <h2>Any Time is Train Time</h2>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-4" id="another_title">
+                        Choo Choo. Chee Chee.
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--    This is the header of the train schedule table. -->
+        <div class="card" id="c2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Current Train Schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    This is the table that that contains the train schedule. -->
+        <div class="card" id="c5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--    This is the header of the train schedule table. -->
+        <div class="card" id="c3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Add Train</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   This is the submit form. -->
+        <div class="card" id="c4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Train Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Destination</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput3">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Frequency (min)</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput4">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/Moment.js"></script>
+
 </html>

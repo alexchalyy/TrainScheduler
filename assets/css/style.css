@@ -1,0 +1,32 @@
+/*  This styles the train schedule web page.    */
+
+/*  This styles the headers. */
+
+#c, #c2, #c3   {
+    background: blue;
+    color: white;
+}
+
+/*  This shrinks the font for the form. */
+
+#c2, #c3, #c4, #c5  {
+    font-size: 70%;
+}
+
+/*  This sets the height of "Current train schedule" and "Add train" headers.    */
+
+#c2, #c3    {
+    height: 50px;
+}
+
+#c2 {
+    padding-left: -2%;
+}
+
+/*  This shrinks the table rows on small screens.   */
+
+@media (max-width: 375px) {
+    .table  {
+        font-size: 50%;
+    }
+}
