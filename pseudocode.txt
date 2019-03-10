@@ -1,6 +1,6 @@
 Train Scheduller Pseudocode:
 
-1.	Create global variables for train name, destination, first train time, current time, next arrival, minutes away, and frequency.
+1.	Create global variables for train name, destination, first train time, current time, next arrival, minutes away, and frequency. DONE
 
 2.	Establish connection with firebase.
 
@@ -8,7 +8,15 @@ Train Scheduller Pseudocode:
 
 4.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
 
-5.	When user clicks Submit.
+5.	When user clicks on clear firebase button:
+
+		a.	Delete all rows from firebase
+
+		b.	Load all train schedule rows from firebase.
+
+		c.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
+
+6.	When user clicks Submit.
 
 		a.	set train name to train name text box value.
 
