@@ -32,6 +32,7 @@ function addRow() {
 
     // Create the new row
     console.log("addRow!");
+    console.log("choo choo " + train_name);
     var newRow = $("<tr>").append(
       $("<td>").text(train_name),
       $("<td>").text(destination),
@@ -176,7 +177,7 @@ $("#sub").on("click",
       console.log("Current time: " + DisplayCurrentTime());
       CalculateArrival();
       StoreTrainSchedule();
-      addRow();
+      //addRow();
     }
 
     //  This logs the values from the text boxes.

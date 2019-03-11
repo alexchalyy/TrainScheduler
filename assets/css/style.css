@@ -23,6 +23,10 @@
     text-align: right;
 }
 
+#c5 {
+    height: auto;
+}
+
 /*  This shrinks the table rows on small screens.   */
 
 @media (max-width: 375px) {
