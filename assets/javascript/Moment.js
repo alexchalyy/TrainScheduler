@@ -177,7 +177,6 @@ $("#sub").on("click",
       console.log("Current time: " + DisplayCurrentTime());
       CalculateArrival();
       StoreTrainSchedule();
-      //addRow();
     }
 
     //  This logs the values from the text boxes.
