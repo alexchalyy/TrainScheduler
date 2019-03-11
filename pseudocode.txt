@@ -2,41 +2,41 @@ Train Scheduller Pseudocode:
 
 1.	Create global variables for train name, destination, first train time, current time, next arrival, minutes away, and frequency. DONE
 
-2.	Establish connection with firebase.
+2.	Establish connection with firebase. DONE
 
-3	Load all train schedule rows from firebase.
+3	Load all train schedule rows from firebase. ?
 
-4.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
+4.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file. ?
 
-5.	When user clicks on clear firebase button:
+5.	When user clicks on clear firebase button: NO
 
-		a.	Delete all rows from firebase
+		a.	Delete all rows from firebase NO
 
-		b.	Load all train schedule rows from firebase.
+		b.	Load all train schedule rows from firebase. NO
 
-		c.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
+		c.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file. NO
 
-6.	When user clicks Submit.
+6.	When user clicks Submit. DONE
 
-		a.	set train name to train name text box value.
+		a.	set train name to train name text box value. DONE
 
-		b.	set destinanation to destination text box value.
+		b.	set destinanation to destination text box value. DONE
 
-		c.	set first train time to first train time text box value.
+		c.	set first train time to first train time text box value. DONE
 
-		d.	set frequency to frequency text box value.
+		d.	set frequency to frequency text box value. DONE
 
-	if train name, destination, first train time, or frequency is/are blank
+	if train name, destination, first train time, or frequency is/are blank	DONE	
 
-		alert user that the he/she must enter values into text boxes for them to appear in scheduler.
+		alert user that the he/she must enter values into text boxes for them to appear in scheduler.	DONE
 
-	else if first train time is not military time value
+	else if first train time is not military time value DONE
 
-		alert user that he/she must enter military time into first train time.
+		alert user that he/she must enter military time into first train time. DONE
 
-	else if frequency is not a positive integer
+	else if frequency is not a positive integer	DONE
 
-		alert user that he/she must enter positive integer for frequency
+		alert user that he/she must enter positive integer for frequency	DONE
 
 	else
 
@@ -70,7 +70,7 @@ Train Scheduller Pseudocode:
 
 		VI.	For every loaded train schedul row, create a new table row dynamically (train name, destination, frequency, next arrival, minutes away) and add it to table in html file.
 
-	clear all the text boxes
+	clear all the text boxes DONE
 
 
 
